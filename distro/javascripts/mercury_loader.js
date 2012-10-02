@@ -47,7 +47,7 @@ if (!window.mercuryPackages) window.mercuryPackages = {
 
   // If the browser isn't supported, we don't try to do anything more.  We do direct userAgent detection here because IE
   // thinks it's supported but isn't -- in part because it has it's own implementation of the contentEditable spec.
-  if (document.getElementsByTagName && document.getElementById && document.designMode && !browser.konqueror && !browser.msie) {
+  if (document.getElementsByTagName && document.getElementById && document.designMode && !browser.konqueror) {
     // supported
   } else {
     return;
